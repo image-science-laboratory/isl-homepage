@@ -1,0 +1,150 @@
+@charset "Shift_JIS";
+
+body{
+padding:0 60px;
+margin:0;
+margin-top:-7px;
+background:url(../image/back_top.gif);
+color:#666;
+font-size:12px;
+line-height:1.7em;
+font-family:sans-serif;
+}
+
+a{
+text-decoration:none;
+}
+img{
+vertical-align:middle;
+border:0;
+}
+
+h1,h2,h3,h4,p,li{
+margin:10px 120px 0 120px;
+padding:10px 0 0 0;
+font-weight:100;
+}
+
+p{
+    font-size:13px;
+    color:#333333;
+}
+
+h2{
+color:#000;
+font-size:16px;
+clear:both;
+font-weight: 500;
+}
+h3{
+font-size:14px;
+margin-bottom:10px;
+letter-spacing:1px;
+color:#3a6;
+clear:both;
+}
+
+h4{
+color:#3a0;
+letter-spacing:1px;
+font-size:10px;
+font-family:"Lucida sans",verdana,sans-serif;
+text-indent:12px;
+}
+
+
+table{
+text-align:center;
+background-color:inherit;
+border:0;
+font-size:12px;
+vertical-align:top;
+width:550px;
+overflow:hidden;
+}
+td{
+vertical-align:top;
+}
+td.fig{
+/*background:#999;
+color:#fff;*/
+width:50%;
+}
+
+.spacer{
+font-size:12px;
+height:250px;
+
+}
+
+div#bottom{
+clear:both;
+text-align:right;
+margin:0  120px;
+padding-top:30px;
+}
+
+div.flash{
+padding:0 120px;
+text-align:center;
+}
+
+#whole{
+background-color:#ffffff;
+max-width:1000px;
+min-width:700px;
+}
+#wholeleft{
+background:url(../image/backleft.gif) repeat-y left;
+}
+
+#wholeright{
+background:url(../image/backright.gif) repeat-y right;
+}
+
+
+.bar_medical{
+margin:0 120px;
+background-image:url(../image/back3.gif);
+font-size:1px;
+height:5px;
+overflow:hidden;
+}
+
+#copyright p{
+background-image:url(../image/back_medical.gif);
+height:20px;
+margin:0px 20px; 
+text-align:center;
+color:#fff;
+}
+
+#copyright2 p{
+background-image:url(../image/back2.gif);
+height:20px;
+margin:0px 20px; 
+text-align:center;
+color:#fff;
+}
+
+
+p.column_right,p.column_middle,p.column_left{
+text-indent:0px;
+}
+.column_wrap{
+margin:0 120px;
+}
+.column_space{
+float:left;
+width:2%;
+margin:0;
+}
+
+.column_right , .column_middle , .column_left{
+float:left;
+width:49%;
+margin:0;
+}
+
+
+

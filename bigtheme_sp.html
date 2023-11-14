@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+  <head>
+    <meta http-equiv="content-type" content="text/xhtml;charset=shift_jis" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+	<title>マルチメディア信号処理</title>
+	<link rel="stylesheet" href="css/themestyle.css" type="text/css">
+	</head>
+    <body>
+      <div id="whole">
+	<div id="wholeleft">
+	  <div id="wholeright">	 
+
+	<h1>
+		マルチメディア信号処理
+	</h1>
+	<p>
+		基盤信号処理プロジェクト／画像・映像圧縮符号化プロジェクト／音楽処理プロジェクト
+	</p>
+
+	<h2>概要</h2>
+	<div class="bar_medical">&nbsp;</div>
+	<div>
+		<p>
+&nbsp;図1は「<font color="red">画像処理</font>」「<font color="green">医用画像</font>」「<font color="blue">マルチメディア信号処理</font>」の関係を表しています．図を見て分かる通り，「<font color="green">医用画像</font>」は「<font color="red">画像処理</font>」のより応用的な分野であり，逆に「<font color="blue">マルチメディア信号処理</font>」は「<font color="red">画像処理</font>」よりも更に基礎的かつ一般的な分野です．言い換えれば，「<font color="blue">マルチメディア信号処理</font>」は「<font color="red">画像処理</font>」にも「<font color="green">医用画像</font>」にも応用可能な技術ということになります．
+		</p>
+		<table align="center">
+			<tr>
+				<td><img src="images/old/bigtheme_sp_relation.png" width="320" height="240" alt="画像処理・医用画像・マルチメディア信号処理の関係" /></td>
+			</tr>
+			<tr>
+				<td class="fig">図1：画像処理・医用画像・マルチメディア信号処理の関係</td>
+			</tr>
+		</table>
+		<p>
+&nbsp;信号処理とは，ある信号を取得(センシング)し，それを加工・解析する技術のことです．得られたディジタル信号は様々なアプリケーションに応用する際にとても便利で，たとえば情報圧縮，情報付加，情報分離等に応用されます．
+		</p>
+		<table align="center">
+			<tr>
+				<td><img src="images/old/bigtheme_sp_signalprocess.png" width="320" height="240" alt="信号処理とは" /></td>
+			</tr>
+			<tr>
+				<td class="fig">図2：信号処理とは</td>
+			</tr>
+		</table>
+	</div>
+
+	<h2>基盤信号処理プロジェクト</h2>
+	<div class="bar_medical">&nbsp;</div>
+	<div>
+		<p>
+&nbsp;信号処理によく使用されるのが<font color="deeppink">周波数変換</font>です(図3参照)．通常，ある周波数変換によって実時間信号を周波数信号に変え，その周波数帯域上で様々な処理を施した後に，逆変換し，画像を復元させます．周波数変換には一般的に<font color="deeppink">フィルタバンク</font>という技術が用いられます．フィルタバンクとは，様々な通過帯域のディジタルフィルタで構成され，信号の間引き処理や補間処理なども含んだ全体の処理を指します．FFT(高速フーリエ変換)，DCT(離散コサイン変換)，DWT(離散ウェーブレット変換)のような工学で広く用いられる変換もフィルタバンクに包括されます．私達は基盤信号処理プロジェクトとして，主にこのフィルタバンクの設計を行っています．
+		</p>
+		<table align="center">
+			<tr>
+				<td><img src="images/old/bigtheme_sp_wavelet.png" width="320" height="160" alt="画像のウェーブレット変換と逆変換" /></td>
+			</tr>
+			<tr>
+				<td class="fig">図3：画像のウェーブレット変換と逆変換</td>
+			</tr>
+		</table>
+		<p>
+&nbsp;また，シャノン標本化定理を満たさない粗く標本化したデータからの高品質再生を目的とした<font color="deeppink">圧縮センシング</font>，著作権保護等のセキュアを考えた<font color="deeppink">情報ハイディング</font>等の研究も行っています．
+		</p>
+	</div>
+
+	<h2>画像・映像圧縮符号化プロジェクト</h2>
+	<div class="bar_medical">&nbsp;</div>
+	<div>
+		<p>
+&nbsp;映像解像度は鰻登りで大きくなっています．地上アナログ放送で使用されていたSD (Standard Definition)に始まり，現在の地上ディジタル放送ではFull HD (High Definition)が使用されています．しかし，近年ではDigital Cinemaに代表される4Kと呼ばれる解像度や，Super Hi-Vision (SHV)と呼ばれる4Kの4倍の解像度を持つ技術まで実用化段階に入ってきています．
+		</p>
+		<table align="center">
+			<tr>
+				<td><img src="images/old/bigtheme_sp_videoresolution.png" width="360" height="240" alt="映像解像度の変遷" /></td>
+			</tr>
+			<tr>
+				<td class="fig">図4：映像解像度の変遷</td>
+			</tr>
+		</table>
+		<p>
+&nbsp;同時に，<font color="deeppink">高ダイナミックレンジ(HDR)映像</font>，<font color="deeppink">高フレームレート映像</font>，<font color="deeppink">3D／多視点映像</font>のような次世代映像が次々と生まれ，そのニーズが高まっています．しかしこれらは，たとえ同コンテンツであっても，その仕様に合わせたファイルをその都度用意しなければならないという問題点を抱えています．ファイルをその都度用意すれば，それだけファイル量が増加し，限られたストレージ容量や通信帯域を圧迫しかねません．
+		</p>
+		<p>
+&nbsp;そこで私達が進めている研究の一つが，<font color="deeppink">ワンソース／マルチユース符号化</font>です．これは，空間解像度，時間解像度，色表現，画素値深度，視点解像度等々，ユーザが所望するデータに対し，同一コンテンツであるならばたった一つだけのファイルで対応しようという構想です．その第一段階として，医療や芸術分野で使用されるロスレス(可逆)符号化と，インターネットコンテンツ等に使用されるロッシー(非可逆)符号化を統合した<font color="deeppink">ロッシー・ロスレス統合符号化</font>の研究を行っています．
+		</p>
+		<table align="center">
+			<tr>
+				<td><img src="images/old/bigtheme_sp_one2multi.png" width="360" height="200" alt="ワンソース／マルチユース符号化" /></td>
+			</tr>
+			<tr>
+				<td class="fig">図5：ワンソース／マルチユース符号化</td>
+			</tr>
+		</table>
+	</div>
+
+	<h2>音楽処理プロジェクト</h2>
+	<div class="bar_medical">&nbsp;</div>
+	<div>
+		<p>
+			携帯プレーヤーへの応用を目的とした圧縮やノイズリダクション手法等を研究しています．
+			<br>
+			Under construction...
+		</p>
+	</div>
+
+</div>
+	<div id="copyright2">
+		<p>Copyright &copy; 2015 Image Science Lab. All rights Reserved.</p>
+	</div>
+
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=shift_jis" />
+	<meta http-equiv="content-style-type" content="text/css" />
+	<meta http-equiv="content-script-type" content="text/javascript" />
+	<title>研究テーマ2 PETソフトウェア開発プロジェクト</title>
+	<link rel="stylesheet" href="css/themestyle.css" type="text/css" />
+</head>
+
+<body>
+
+	<div id="whole">
+		<div id="wholeleft">
+			<div id="wholeright">
+				<a name="top"><img src="image/isl2.gif" width="200" height="20" alt="isl2" align="right" /></a>
+				
+				<h2>PETソフトウェア開発の背景</h2>
+
+				<div class="bar_medical">&nbsp;</div>
+				<div>
+					<p>
+						ＰＥＴは体内の機能を断層像として画像化する装置です。
+						ＰＥＴを用いることで従来困難であった初期がんを発見する
+						ことが可能となっています。ＰＥＴでは、体内に放射性同位元素
+						で標識された薬剤を注入し、体内から放射されるガンマ線光子を検
+						出器で検出することでデータが得られます。
+					</p>
+					<table align="center">
+					<tr>
+					<td><img src="images/old/gennri.gif" alt="PETの原理" /></td>
+					<td><img src="images/old/pet_example.gif" alt="PETの例" /></td>
+
+					</tr>
+					<tr>
+						<td class="fig">fig1 : PETの原理</td>
+						<td class="fig">fig2 : PETの例</td>
+					</tr>
+					</table>
+					<p>
+						一般的なＰＥＴにおける画像再構成法として、以前は解析的手法
+						が用いられてきました。しかし解析的手法では雑音の影響を大きく
+						受けた画像が現れてしまう問題があり、近年では解析的手法にかわり
+						統計的手法が適用されるようになりました。統計的手法の利点としては、
+						雑音の影響を軽減しやすいこと、体内におけるガンマ線光子の吸収や散
+						乱線の補正がしやすいことなどが挙げられます。しかし一方で計算量が
+						解析的手法に比べて多くなってしまうという問題があり、計算量の軽減
+						も課題になっています。
+					</p>
+
+					<p>
+						これら背景を踏まえ、当研究室ではより高精度、高速化したＰＥＴ画像
+						を再構成することを目標に研究を行っています。
+					</p>
+				</div>
+				<h2>統計的雑音を軽減する画像再構成法の研究</h2>
+				<div class="bar_medical">&nbsp;</div>
+				<div>
+					<p>
+						左の画像は解析的手法であるフィルタ補正逆投影法を用いたもの、
+						右は実際に当研究室で開発された統計的手法のアルゴリズムで
+						再構成された画像です。
+					</p>
+
+					<table align="center">
+					<tr>
+					<td colspan="2"><img src="images/old/kaiseki_and_toukei.gif" width="100%" alt="手法の比較" /></td>
+					</tr>
+					<tr>
+						<td class="fig">fig3 : 解析的手法</td>
+						<td class="fig">fig4 : 当研究室で開発した手法</td>
+					</tr>
+
+					</table>
+
+                                        <table align="center">
+                                        <p>
+                                         次に、脳イメージングにおいて各手法で再構成した画像です。上が従来の解析的手法を用いたもの、下が当研究室の統計的手法のアルゴリズムで再構成したものです。
+                                        </p>
+
+					<tr>
+					<td colspan="2"><img src="images/old/pet_fbp.png" width="100%" alt="解析的手法fbp" /></td>
+					</tr>
+					<tr>
+						<td class="fig">fig5 : 解析的手法</td>
+                                        </tr>
+                                        <tr>
+					<td colspan="2"><img src="images/old/pet_mlem.png" width="100%" alt="統計的手法fbp" /></td>
+					</tr>
+                                        <tr>
+						<td class="fig">fig6 : 当研究室で開発した手法</td>
+					</tr>
+
+					</table>
+
+					
+				</div>
+				<h2>３次元ＰＥＴの画像再構成法の研究</h2>
+				<div class="bar_medical">&nbsp;</div>
+				<div>
+					<p>
+						現在のＰＥＴの多くは検出器リング間での検出をカットした２次元ＰＥＴ
+						と呼ばれる方式をとっていますが、ほとんどのガンマ線光子は検出されず、
+						効率が悪くなっています。これに対し近年では、検出器リング間での光子検出
+						も行うことで、検出効率を大幅に向上させた３次元ＰＥＴが注目されています。
+						この３次元ＰＥＴでは扱うデータの数が多く、計算量の軽減が重要な課題とな
+						ってきます。そこでデータ量の削減のために従来のデータ取得方法とは違った、
+						リストモードデータと呼ばれる取得方法で取られたデータを用いて再構成を行う
+						ことも研究しています。
+					</p>
+					
+					<table align="center">
+
+					<tr>
+					<td><img src="images/old/reconst_stage.png"  width="600" alt="PET画像再構成のプロセス" /></td>
+					</tr>
+					</table>
+					<p>リストモードデータの場合，データの測定と同時に画像再構成を行え測定後の再構成の時間を短縮することが可能となります．また装置としてみた場合，3次元に拡張した場合に従来の方式に比べて記憶領域の削減を行う事が出来ます。本研究では，リストモードデータからの再構成に関して観測と同時に再構成を行うワンパス画像再構成向けのアルゴリズムの開発を行っています。
+					</p>
+
+					<table align="center">
+
+					<tr>
+					<td><img src="images/old/3dpet.gif"  width="200" height="200" alt="OSEM法とDRAMA法" /></td>
+					</tr>
+					<tr>
+						<td>fig4 : OSEM法とDRAMA法の比較</td>
+					</tr>
+					</table>
+
+					<p>
+
+						画像左は従来用いられていたＯＳＥＭ法と呼ばれる手法を用いた画像、
+						画像右は近年提案されたＤＲＡＭＡと呼ばれる手法を３次元ＰＥＴに適用
+						した画像です。
+					</p>
+					<p>近年の研究では従来のアルゴリズムがパラメータの設定が難しいという問題を解消するアルゴリズムを開発しました。従来手法(DRAMA)が2つのパラメータを適切に設定しないと右図のように反復を繰り返しても画質が向上しないのに比べて，提案手法では1つのパラメータの容易な設定で従来手法のパラメータ設定を適切に行った場合と同様に動くことが分かります。下図は提案手法と従来手法のDRAMA方を比較したアニメーションになります．左（提案手法），中央（適切にパラメータを設定した場合のDRAMA法）、右（パラメータ設定を誤った場合の従来手法）
+					</p>
+					<table align="center">
+
+					<tr>
+					<td><img src="images/old/phantom_reconst.gif"  width="300" alt="ファントム画像の再構成" /></td>
+					</tr>
+					<tr>
+						<td>fig5 :ファントム画像を用いた場合のワンパス画像再構成 </td>
+					</tr>
+					</table>
+
+
+					<table align="center">
+
+					<tr>
+					<td><img src="images/old/brain_reconst.gif"  width="300" alt="脳画像の再構成" /></td>
+					</tr>
+					<tr>
+				       	<td>fig6 :脳画像を用いたワンパス画像再構成</td>
+					</tr>
+					</table>
+				
+				</div>
+
+				<div id="copyright">
+					<p>Copyright &copy; 2005 Image Science Lab. All rights Reserved.</p>
+				</div>
+				<!--copyright -->
+
+			</div>
+			<!--wholeright -->
+		</div>
+		<!--wholeleft -->
+	</div>
+	<!--whole -->
+</body>
+</html>

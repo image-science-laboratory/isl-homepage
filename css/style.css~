@@ -1,0 +1,306 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-kerning: inherit;
+    font-language-override: inherit;
+    font-size: 100%;
+    font-size-adjust: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-synthesis: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+html {
+    line-height: 1;
+}
+ol, ul {
+    list-style: outside none none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin:20px 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+}
+q, blockquote {
+    quotes: none;
+}
+q::before, q::after, blockquote::before, blockquote::after {
+    content: none;
+}
+a img {
+    border: medium none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+.bl {
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    min-height: 1px;
+}
+* html .clearfix {
+    height: 1px;
+    overflow: hidden;
+}
+body {
+    background-color: #f9f9f9;
+    color: #3c3c3c;
+    font-family: "Lucida Grande",Tahoma,Verdana,Arial,"Hiragino Kaku Gothic Pro",Meiryo,"MS PGothic",sans-serif;
+    font-size: 90%;
+    line-height: 160%;
+}
+#wrapper {
+    background-color: white;
+    margin: 0 auto;
+    text-align: left;
+    width: 860px;
+}
+#header {
+    background: #fff none repeat scroll 0 0;
+    height: 35px;
+}
+#header h1 {
+    background: rgba(0, 0, 0, 0) url("../images/isl_logo.gif") no-repeat scroll left center / contain ;
+    float: left;
+    height: 60px;
+    margin: 17px auto;
+    text-indent: -999em;
+    width: 450px;
+}
+#header h1 a {
+    display: block;
+    height: 60px;
+    width: 450px;
+}
+#hader #sub_navi {
+    position: absolute;
+    right: 0;
+    top: 11px;
+}
+#sub_navi li {
+    background: rgba(0, 0, 0, 0) url("../images/logo2.png") no-repeat scroll left top;
+    display: block;
+    float: right;
+    height: 20px;
+    margin: 40px 10px 0 0;
+    text-indent: -999em;
+    width: 185px;
+}
+#sub_navi li a {
+    display: block;
+    height: 20px;
+    width: 185px;
+}
+#message{
+  font-size: 14.5px;
+  margin-bottom: 15px;
+}
+#top {
+    margin: 13px auto 30px;
+}
+#container {
+    background-color: white;
+    margin: 0 auto;
+    width: 860px;
+}
+#container #side {
+    float: left;
+    margin-left: 2px;
+    width: 170px;
+}
+#side #navi a {
+    background: rgba(0, 0, 0, 0) url("../images/navi_.png") repeat scroll 0 0;
+    height: 50px;
+    width: 167px;
+}
+#side #navi .i1 a {
+    background-position: 0 0;
+}
+#side #navi .i1 a:hover {
+    background-position: -167px 0;
+}
+#side #navi .i2 a {
+    background-position: 0 -50px;
+}
+#side #navi .i2 a:hover {
+    background-position: -167px -50px;
+}
+#side #navi .i3 a {
+    background-position: 0 -100px;
+}
+#side #navi .i3 a:hover {
+    background-position: -167px -100px;
+}
+#side #navi .i4 a {
+    background-position: 0 -150px;
+}
+#side #navi .i4 a:hover {
+    background-position: -167px -150px;
+}
+#side #navi .i5 a {
+    background-position: 0 -200px;
+}
+#side #navi .i5 a:hover {
+    background-position: -167px -200px;
+}
+#side #navi .i6 a {
+    background-position: 0 -250px;
+}
+#side #navi .i6 a:hover {
+    background-position: -167px -250px;
+}
+#side #navi .i7 a {
+    background-position: 0 -300px;
+}
+#side #navi .i7 a:hover {
+    background-position: -167px -300px;
+}
+#content {
+    float: right;
+    padding: 5px 20px 50px;
+    width: 630px;
+}
+#content h2 {
+    border-left: 7px solid #85c0ff;
+    font-size: 130%;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 27px;
+    padding: 0 5px 0 8px;
+    margin-bottom: 10px;
+}
+#content h3 {
+    background: rgba(0, 0, 0, 0) url("../images/maru.gif") no-repeat scroll 0 center;
+    background-size: 6px;
+    font-weight: bold;
+    font-size: 105%;
+    margin-bottom: 1px;
+    margin-top: 20px;
+    padding: 0 5px 0 12px;
+}
+table, td, th {
+    border: 1px none #595959;
+    border-collapse: collapse;
+}
+#member td {
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 1px 0;
+}
+th {
+    background: #f0e6cc none repeat scroll 0 0;
+}
+.even {
+    background: #fbf8f0 none repeat scroll 0 0;
+}
+.odd {
+    background: #fefcf9 none repeat scroll 0 0;
+}
+.bar2 {
+    background-image: url("../images/back3.gif");
+    font-size: 1px;
+    height: 3px;
+    width: 625px;
+}
+#content p {
+    margin: 15px 0;
+    text-indent: 1em;
+}
+#content dl.topics {
+    border: 1px solid #cccccc;
+    height: 340px;
+    margin: 20px 0;
+    overflow-y: scroll;
+    padding: 10px 20px;
+    width: 590px;
+}
+#content dt {
+    background: rgba(0, 0, 0, 0) url("../images/arrow.gif") no-repeat scroll left -1px;
+    margin-bottom: 8px;
+    padding-left: 15px;
+}
+#content dl.topics dd {
+    border-bottom: 1px dotted #88b6e5;
+    margin-bottom: 8px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    width: 550px;
+}
+#content .publication ol {
+    margin: 5px 0 10px 35px;
+}
+#content .publication ol li {
+    list-style-type: decimal;
+    margin-bottom: 8px;
+}
+#member table {
+  border-width: 1px 0px; /* 上下だけ引く */
+  border-color: grey; /* 線色：緑 */
+  border-style: solid; /* 線種：実線 */
+  padding: 0.3em; /* セル内側の余白 */
+}
+#member td {
+  padding: 3px 0;
+  text-align: center;
+}
+div.bottom {
+    margin: 10px 0;
+    text-align: right;
+    width: 600px;
+}
+strong {
+  font-weight: bold;
+}
+a {
+    color: #1c4290;
+}
+.banner {
+   margin: 10px 0 0 0px;
+}
+#footer {
+    color: #3c3c3c;
+    padding: 20px 0 10px;
+    text-align: center;
+}
+#footer li {
+    border-left: 1px solid #3c3c3c;
+    display: inline;
+    margin-left: 3px;
+    padding-left: 6px;
+}
+#footer a {
+    color: #3c3c3c;
+    text-decoration: none;
+}
+#footer li.last {
+    border-right: 1px solid #3c3c3c;
+    padding-right: 6px;
+}
+.copyright {
+    font-size: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
