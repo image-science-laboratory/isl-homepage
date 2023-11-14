@@ -261,10 +261,10 @@ th {
     margin-bottom: 8px;
 }
 #member table {
-  border-width: 1px 0px; /* 荳贋ｸ九□縺大ｼ輔￥ */
-  border-color: grey; /* 邱夊牡ｼ夂ｷ */
-  border-style: solid; /* 邱夂ｨｮｼ壼ｮ溽ｷ */
-  padding: 0.3em; /* 繧ｻ繝ｫ蜀蛛ｴ縺ｮ菴咏區 */
+  border-width: 1px 0px; /* 上下だけ引く */
+  border-color: grey; /* 線色：緑 */
+  border-style: solid; /* 線種：実線 */
+  padding: 0.3em; /* セル内側の余白 */
 }
 #member td {
   padding: 3px 0;
